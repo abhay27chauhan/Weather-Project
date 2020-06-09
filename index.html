@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin-top: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>City Current Weather</h1>
+    <form action="/" method="POST">
+        <label for="CityInput">City Name: </label>
+        <input id="CityInput" type="text" name="cityName">
+        <label for="CityInput">Unit: </label>
+        <select name="unit">
+            <option value="default">Kelvin</option>
+            <option value="metric">Celsius</option>
+            <option value="imperial">Fahrenheit</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
